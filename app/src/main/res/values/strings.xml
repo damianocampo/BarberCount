@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Barber Count</string>
+    <string name="title_activity_nav">Bienvenido</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <!-- Titulos Menu -->
+    <string name="opcion_menu_perfil">Perfil</string>
+    <string name="opcion_menu_servicio">Servicio</string>
+    <string name="opcion_menu_barberos">Barberos</string>
+    <string name="opcion_menu_caja">Caja</string>
+    <string name="opcion_menu_ventas">Ventas</string>
+    <string name="opcion_menu_feedback">Feedback</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
