@@ -1,6 +1,6 @@
 *.ap_
 
-# Files for the ART/Dalvik VM
+# Files for Damian
 *.dex
 
 # Java class files
