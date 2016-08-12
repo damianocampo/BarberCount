@@ -32,7 +32,7 @@ public class BarberosActivity extends AppCompatActivity {
         });
 
 
-        ListView lista = (ListView) findViewById(R.id.lista);
+        ListView lista = (ListView) findViewById(R.id.listaBarberos);
         ArrayList<EmpleadoDTO> empleados = new ArrayList<EmpleadoDTO>();
         EmpleadoDTO empleado;
 
