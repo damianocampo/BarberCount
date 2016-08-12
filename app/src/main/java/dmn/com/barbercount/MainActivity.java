@@ -18,15 +18,17 @@ public class MainActivity extends AppCompatActivity {
         btnIniciarSesion.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                String usuario = ((EditText)findViewById(R.id.txtUsuario)).getText().toString();
-                String contra = ((EditText) findViewById(R.id.txtContra)).getText().toString();
-                if(usuario.equals("ocampo.arturodamian@gmail.com")&& contra.equals("ocampo") || usuario.equals("ismael.gc.91@gmail.com")&& contra.equals("12345")){
 
-                    Intent principal = new Intent(MainActivity.this, NavActivity.class);
-                    startActivity(principal);
-                }else{
-                    Toast.makeText(getApplicationContext(),"Usuario o contraseña incorrecta",Toast.LENGTH_SHORT).show();
-                }
+                Intent principal = new Intent(MainActivity.this, NavActivity.class);
+                startActivity(principal);
+//                String usuario = ((EditText)findViewById(R.id.txtUsuario)).getText().toString();
+//                String contra = ((EditText) findViewById(R.id.txtContra)).getText().toString();
+//                if(usuario.equals("ocampo.arturodamian@gmail.com")&& contra.equals("ocampo") || usuario.equals("ismael.gc.91@gmail.com")&& contra.equals("12345")){
+//
+//
+//                }else{
+//                    Toast.makeText(getApplicationContext(),"Usuario o contraseña incorrecta",Toast.LENGTH_SHORT).show();
+//                }
             }
         });
     }
