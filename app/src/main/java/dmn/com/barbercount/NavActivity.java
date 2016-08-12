@@ -1,5 +1,6 @@
 package dmn.com.barbercount;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -90,8 +91,11 @@ public class NavActivity extends AppCompatActivity
         } else if (id == R.id.nav_servicios) {
 
         } else if (id == R.id.nav_barberos) {
-        fragment = new BarberosFragment();
-            FragmentoSeleccionado = true;
+//        fragment = new BarberosFragment();
+//            FragmentoSeleccionado = true;
+            Intent act = new Intent(this,BarberosActivity.class);
+            startActivity(act);
+
         } else if (id == R.id.nav_ventas) {
 
         } else if (id == R.id.nav_caja) {

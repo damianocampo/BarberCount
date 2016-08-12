@@ -19,16 +19,14 @@
             android:name=".NavActivity"
             android:label="@string/title_activity_nav"
             android:theme="@style/AppTheme.NoActionBar" />
-
-        <activity android:name=".BarberoActivity"
-            android:parentActivityName=".NavActivity" >
+        <activity
+            android:name=".BarberoActivity"
+            android:parentActivityName=".NavActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITI"
-                android:value=".NavActivity"
-                >
-
-            </meta-data>
+                android:value=".NavActivity"></meta-data>
         </activity>
+        <activity android:name=".BarberosActivity"></activity>
     </application>
 
 </manifest>

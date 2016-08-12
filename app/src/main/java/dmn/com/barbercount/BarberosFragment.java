@@ -113,37 +113,33 @@ public class BarberosFragment extends Fragment {
 //           });
 
 
-
-
-
-
         View view = inflater.inflate(R.layout.fragment_barberos, container, false);
 
-        FloatingActionButton fab = (FloatingActionButton) view.findViewById(R.id.addBarber);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//               Toast.makeText(getActivity().getApplicationContext(),"Acccion desde el boton",Toast.LENGTH_LONG).show();
-                Intent act = new Intent(getActivity(),BarberoActivity.class);
-                startActivity(act);
-            }
-        });
-
-        ListView lista = (ListView) view.findViewById(R.id.lista);
-        ArrayList<EmpleadoDTO> empleados = new ArrayList<EmpleadoDTO>();
-        EmpleadoDTO empleado;
-
-        empleado = new EmpleadoDTO(getResources().getDrawable(R.drawable.barbers_chair),"Arturo Damian Ocampo","ocampo.damian@hotmail.com");
-        empleados.add(empleado);
-        empleado = new EmpleadoDTO(getResources().getDrawable(R.drawable.barbers_chair),"Ismael Galan","icazares@trapichar.com");
-        empleados.add(empleado);
-
-        // Crea el adapter personalizado
-        AdapterEmpleado adapter = new AdapterEmpleado(getActivity(), empleados);
-        //Lo aplico
-        lista.setAdapter(adapter);
+//        FloatingActionButton fab = (FloatingActionButton) view.findViewById(R.id.addBarber);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+////                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+////                        .setAction("Action", null).show();
+////               Toast.makeText(getActivity().getApplicationContext(),"Acccion desde el boton",Toast.LENGTH_LONG).show();
+//                Intent act = new Intent(getActivity(),BarberoActivity.class);
+//                startActivity(act);
+//            }
+//        });
+//
+//        ListView lista = (ListView) view.findViewById(R.id.lista);
+//        ArrayList<EmpleadoDTO> empleados = new ArrayList<EmpleadoDTO>();
+//        EmpleadoDTO empleado;
+//
+//        empleado = new EmpleadoDTO(getResources().getDrawable(R.drawable.barbers_chair),"Arturo Damian Ocampo","ocampo.damian@hotmail.com");
+//        empleados.add(empleado);
+//        empleado = new EmpleadoDTO(getResources().getDrawable(R.drawable.barbers_chair),"Ismael Galan","icazares@trapichar.com");
+//        empleados.add(empleado);
+//
+//        // Crea el adapter personalizado
+//        AdapterEmpleado adapter = new AdapterEmpleado(getActivity(), empleados);
+//        //Lo aplico
+//        lista.setAdapter(adapter);
 
 
         return view;
