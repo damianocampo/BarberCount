@@ -89,7 +89,8 @@ public class NavActivity extends AppCompatActivity
             fragment = new PerfilFragment();
             FragmentoSeleccionado = true;
         } else if (id == R.id.nav_servicios) {
-
+            Intent i = new Intent(this,ServiciosActivity.class);
+            startActivity(i);
         } else if (id == R.id.nav_barberos) {
 //        fragment = new BarberosFragment();
 //            FragmentoSeleccionado = true;

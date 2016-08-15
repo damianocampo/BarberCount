@@ -27,6 +27,7 @@
                 android:value=".NavActivity"></meta-data>
         </activity>
         <activity android:name=".BarberosActivity"></activity>
+        <activity android:name=".ServiciosActivity"></activity>
     </application>
 
 </manifest>
