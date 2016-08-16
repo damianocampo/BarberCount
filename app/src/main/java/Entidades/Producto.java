@@ -3,7 +3,7 @@ package Entidades;
 /**
  * Created by Ismael on 12/08/2016.
  */
-public class Servicio {
+public class Producto {
     private String Nombre;
 
     public String getNombre() {

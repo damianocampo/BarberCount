@@ -49,7 +49,7 @@ public class AdapterServicio extends BaseAdapter {
         View v = convertView;
         if(convertView == null){
             LayoutInflater inf = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            v = inf.inflate(R.layout.itemlista, null);
+            v = inf.inflate(R.layout.itemservicios, null);
         }
         // Creamos un objeto de la clase Datos
         ServicioDTO s = items.get(position);
@@ -57,8 +57,10 @@ public class AdapterServicio extends BaseAdapter {
         ImageView foto = (ImageView) v.findViewById(R.id.img_foto);
         foto.setImageDrawable(s.getFoto());
         //Rellenamos el nombre
-        TextView nombreCompleto = (TextView) v.findViewById(R.id.txtNombreCompleto);
-        nombreCompleto.setText(s.getNombreServicio());
+        TextView nombreServicio = (TextView) v.findViewById(R.id.txtNombreServicio);
+        nombreServicio.setText(s.getNombreServicio());
+        TextView precioServicio = (TextView) v.findViewById(R.id.txtPrecio);
+        precioServicio.setText(String.valueOf(s.getPrecio()));
         return v;
     }
 }
