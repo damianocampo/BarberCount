@@ -60,7 +60,7 @@ public class AdapterServicio extends BaseAdapter {
         TextView nombreServicio = (TextView) v.findViewById(R.id.txtNombreServicio);
         nombreServicio.setText(s.getNombreServicio());
         TextView precioServicio = (TextView) v.findViewById(R.id.txtPrecio);
-        precioServicio.setText(String.valueOf(s.getPrecio()));
+        precioServicio.setText(String.valueOf("$"+s.getPrecio()));
         return v;
     }
 }

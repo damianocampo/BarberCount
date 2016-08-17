@@ -1,33 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+xmlns:tools="http://schemas.android.com/tools"
+android:background="?android:attr/selectableItemBackground"
+android:padding="@dimen/md_keylines">
+
+<ImageView
+    android:id="@+id/img_foto"
+    android:layout_width="@dimen/avator_size"
+    android:layout_height="@dimen/avator_size"
+    android:scaleType="centerCrop"
+    tools:src="@mipmap/ic_launcher" />
+
+<TextView
+    android:id="@+id/txtNombreServicio"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/md_keylines"
+    android:layout_toRightOf="@+id/img_foto"
+    tools:text="@string/item_title"
+    android:textAppearance="?attr/textAppearanceListItem"
+    android:textSize="@dimen/article_subheading" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:id="@+id/img_foto" />
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="44dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Servicio"
-            android:id="@+id/txtNombreServicio" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Precio"
-            android:id="@+id/txtPrecio" />
-    </LinearLayout>
-</LinearLayout>
+<TextView
+    android:id="@+id/txtPrecio"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/txtNombreServicio"
+    android:layout_marginLeft="@dimen/md_keylines"
+    android:layout_toRightOf="@+id/img_foto"
+    android:textColor="@color/colorPrimary"
+    android:ellipsize="end"
+    android:singleLine="true"
+    tools:text="@string/item_desc"
+    android:textAppearance="?attr/textAppearanceListItem"
+    android:textSize="@dimen/list_body" />
+</RelativeLayout>

@@ -12,16 +12,20 @@
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/listaServicios" />
+        android:id="@+id/listaServicios"
+        android:layout_alignParentTop="true"
+        android:divider="@color/colorPrimaryDark"
+        android:layout_alignParentStart="true" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/addServicio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:src="@android:drawable/ic_input_add"
-        android:layout_marginLeft="@dimen/fab_margin"
-        android:layout_marginRight="@dimen/fab_margin"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/addServicio"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:src="@android:drawable/ic_input_add"-->
+        <!--android:layout_marginLeft="@dimen/fab_margin"-->
+        <!--android:layout_marginRight="@dimen/fab_margin"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentEnd="true" />-->
+
 </RelativeLayout>
