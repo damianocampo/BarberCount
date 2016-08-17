@@ -13,6 +13,7 @@ import java.util.ArrayList;
 
 import DTOs.EmpleadoDTO;
 import DTOs.ServicioDTO;
+import Entidades.Producto;
 
 /**
  * Created by Ismael on 15/08/2016.
@@ -21,9 +22,9 @@ public class AdapterServicio extends BaseAdapter {
 
     protected Activity activity;
 
-    protected ArrayList<ServicioDTO> items;
+    protected ArrayList<Producto> items;
 
-    public AdapterServicio(Activity activity, ArrayList<ServicioDTO> items){
+    public AdapterServicio(Activity activity, ArrayList<Producto> items){
         this.activity = activity;
         this.items = items;
     }
@@ -41,7 +42,7 @@ public class AdapterServicio extends BaseAdapter {
 
     @Override
     public long getItemId(int position) {
-        return items.get(position).getId();
+        return items.get(position).getCantidad();// .getIdProducto();
     }
 
     @Override
@@ -52,13 +53,13 @@ public class AdapterServicio extends BaseAdapter {
             v = inf.inflate(R.layout.itemservicios, null);
         }
         // Creamos un objeto de la clase Datos
-        ServicioDTO s = items.get(position);
+        Producto s = items.get(position);
         //Rellenamos la fotografia
-        ImageView foto = (ImageView) v.findViewById(R.id.img_foto);
-        foto.setImageDrawable(s.getFoto());
+        //ImageView foto = (ImageView) v.findViewById(R.id.img_foto);
+        //foto.setImageDrawable(s.getFoto());
         //Rellenamos el nombre
         TextView nombreServicio = (TextView) v.findViewById(R.id.txtNombreServicio);
-        nombreServicio.setText(s.getNombreServicio());
+        nombreServicio.setText(s.getNombre());
         TextView precioServicio = (TextView) v.findViewById(R.id.txtPrecio);
         precioServicio.setText(String.valueOf("$"+s.getPrecio()));
         return v;

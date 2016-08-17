@@ -14,6 +14,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import DTOs.ServicioDTO;
+import Entidades.Producto;
 
 /**
  * Created by Ismael on 12/08/2016.
@@ -36,8 +37,8 @@ public class ServiciosActivity extends AppCompatActivity {
         });
 
         ListView lista = (ListView) findViewById(R.id.listaBarberos);
-        ArrayList<ServicioDTO> servicios = new ArrayList<ServicioDTO>();
-        ServicioDTO servicio;
+        ArrayList<Producto> productos = new ArrayList<Producto>();
+        Producto producto;
 
 
 
@@ -51,13 +52,13 @@ public class ServiciosActivity extends AppCompatActivity {
 
 
 
-        servicio = new ServicioDTO(1, getResources().getDrawable(R.drawable.barbers_chair), "Corte de pelo", 50);
-        servicios.add(servicio);
-        servicio = new ServicioDTO(2, getResources().getDrawable(R.drawable.barbers_chair), "Corte barba", 20);
-        servicios.add(servicio);
+        producto = new Producto();// ServicioDTO(1, getResources().getDrawable(R.drawable.barbers_chair), "Corte de pelo", 50);
+        productos.add(producto);
+        producto = new Producto();//(2, getResources().getDrawable(R.drawable.barbers_chair), "Corte barba", 20);
+        productos.add(producto);
 
         // Crea el adapter personalizado
-        AdapterServicio adapter = new AdapterServicio(this, servicios);
+        AdapterServicio adapter = new AdapterServicio(this, productos);
         //Lo aplico
         lista.setAdapter(adapter);
 
