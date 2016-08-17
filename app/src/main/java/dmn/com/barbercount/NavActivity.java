@@ -100,6 +100,8 @@ public class NavActivity extends AppCompatActivity
         } else if (id == R.id.nav_ventas) {
 
         } else if (id == R.id.nav_caja) {
+            Intent i = new Intent(this,CajaActivity.class);
+            startActivity(i);
 
         } else if (id == R.id.nav_feedback) {
 

@@ -23,6 +23,12 @@ public class ServicioDTO {
         Precio = precio;
     }
 
+    public ServicioDTO(int id, String nombreServicio, Integer precio) {
+        Id = id;
+        NombreServicio = nombreServicio;
+        Precio = precio;
+    }
+
     public int getId() {
         return Id;
     }

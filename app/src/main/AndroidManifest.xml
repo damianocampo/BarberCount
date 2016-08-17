@@ -21,13 +21,14 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".BarberoActivity"
-            android:parentActivityName=".NavActivity">
+            android:parentActivityName=".BarberosActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITI"
-                android:value=".NavActivity"></meta-data>
+                android:value=".BarberosActivity" />
         </activity>
-        <activity android:name=".BarberosActivity"></activity>
-        <activity android:name=".ServiciosActivity"></activity>
+        <activity android:name=".BarberosActivity" />
+        <activity android:name=".ServiciosActivity" />
+        <activity android:name=".CajaActivity"></activity>
     </application>
 
 </manifest>

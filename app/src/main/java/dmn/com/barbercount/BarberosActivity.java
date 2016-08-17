@@ -25,9 +25,9 @@ public class BarberosActivity extends AppCompatActivity {
             public void onClick(View view) {
 //                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
 //                        .setAction("Action", null).show();
-              Toast.makeText(getApplicationContext(),"Acccion desde el boton",Toast.LENGTH_LONG).show();
-//                Intent act = new Intent(getActivity(),BarberoActivity.class);
-//                startActivity(act);
+           //  Toast.makeText(getApplicationContext(),"Acccion desde el boton",Toast.LENGTH_LONG).show();
+                Intent barberoIntent = new Intent(getApplicationContext(),BarberoActivity.class);
+                startActivity(barberoIntent);
             }
         });
 
