@@ -17,7 +17,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class NavActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener,PerfilFragment.OnFragmentInteractionListener,BarberosFragment.OnFragmentInteractionListener {
+        implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,14 +86,12 @@ public class NavActivity extends AppCompatActivity
         Boolean FragmentoSeleccionado = false;
         if (id == R.id.nav_perfil) {
             // Handle the camera action
-            fragment = new PerfilFragment();
-            FragmentoSeleccionado = true;
+//            fragment = new PerfilFragment();
+//            FragmentoSeleccionado = true;
         } else if (id == R.id.nav_servicios) {
             Intent i = new Intent(this,ServiciosActivity.class);
             startActivity(i);
         } else if (id == R.id.nav_barberos) {
-//        fragment = new BarberosFragment();
-//            FragmentoSeleccionado = true;
             Intent act = new Intent(this,BarberosActivity.class);
             startActivity(act);
 
@@ -114,8 +112,5 @@ public class NavActivity extends AppCompatActivity
         return true;
     }
 
-    @Override
-    public void onFragmentInteraction(Uri uri) {
 
-    }
 }

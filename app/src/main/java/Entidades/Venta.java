@@ -18,6 +18,14 @@ public class Venta {
 
      }
 
+    public Venta(double total, String idVenta, Date fecha, String numeroVenta, List<Entidades.DetalleVenta> detalleVenta) {
+        Total = total;
+        IdVenta = idVenta;
+        Fecha = fecha;
+        NumeroVenta = numeroVenta;
+        DetalleVenta = detalleVenta;
+    }
+
     public String getIdVenta() {
         return IdVenta;
     }

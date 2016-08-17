@@ -16,6 +16,15 @@ public class DetalleVenta {
     public DetalleVenta(){
     }
 
+    public DetalleVenta(String idDetalleVenta, int cantidad, double precioUnitario, double totalPrecioVenta, Entidades.Venta venta, Entidades.Producto producto) {
+        IdDetalleVenta = idDetalleVenta;
+        Cantidad = cantidad;
+        PrecioUnitario = precioUnitario;
+        TotalPrecioVenta = totalPrecioVenta;
+        Venta = venta;
+        Producto = producto;
+    }
+
     public String getIdDetalleVenta() {
         return IdDetalleVenta;
     }

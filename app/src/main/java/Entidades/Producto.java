@@ -6,7 +6,12 @@ package Entidades;
 public class Producto {
     private String IdProducto;
     private String Nombre;
-    private int Precio;
+    private String Descripcion;
+    private double Precio;
+    private String Tipo;
+    private int Cantidad;
+    private  Negocio Negocio;
+
 
     public Producto(String idProducto, String nombre, int precio) {
         IdProducto = idProducto;
@@ -22,11 +27,11 @@ public class Producto {
         Nombre = nombre;
     }
 
-    public int getPrecio() {
+    public double getPrecio() {
         return Precio;
     }
 
-    public void setPrecio(int precio) {
+    public void setPrecio(double precio) {
         Precio = precio;
     }
 
