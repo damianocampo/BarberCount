@@ -13,10 +13,17 @@ public class Producto {
     private  Negocio Negocio;
 
 
-    public Producto(String idProducto, String nombre, int precio) {
+    public Producto() {
+    }
+
+    public Producto(String idProducto, String nombre, String descripcion, double precio, Entidades.Negocio negocio, int cantidad, String tipo) {
         IdProducto = idProducto;
         Nombre = nombre;
+        Descripcion = descripcion;
         Precio = precio;
+        Negocio = negocio;
+        Cantidad = cantidad;
+        Tipo = tipo;
     }
 
     public String getNombre() {

@@ -27,12 +27,11 @@ public class CajaActivity extends AppCompatActivity {
 
         ListView lista = (ListView) findViewById(R.id.listaServiciosCaja);
         ArrayList<Producto> servicios = new ArrayList<Producto>();
-        Producto servicio;
 
-        servicio = new Producto("15140","Corte de Cabello",60);
-        servicios.add(servicio);
-        servicio = new Producto("15141","Corte de Barba",30);
-        servicios.add(servicio);
+        //Producto p = new Producto();
+        //servicios.add();
+//        servicio = new Producto("15141","Corte de Barba",30);
+//        servicios.add(servicio);
         // Crea el adapter personalizado
         AdapterCaja adapter = new AdapterCaja(this, R.layout.itemserviciocaja,servicios);
 
